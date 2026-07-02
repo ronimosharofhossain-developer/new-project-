@@ -28,18 +28,11 @@
 </head>
 <body>
 
-    <!-- Background Orbs -->
-    <div class="bg-orb-container">
-        <div class="bg-orb orb-1"></div>
-        <div class="bg-orb orb-2"></div>
-        <div class="bg-orb orb-3"></div>
-    </div>
-
     <!-- Header Navigation -->
     <header class="header">
         <div class="container nav-container">
             <a href="#" class="logo" id="nav-logo">
-                <span class="logo-accent">&lt;</span>Alex<span class="logo-accent">.dev /&gt;</span>
+                Alex<span class="logo-accent">.dev</span>
             </a>
             
             <nav class="nav-menu" id="nav-menu">
@@ -69,19 +62,19 @@
         <!-- Hero Section -->
         <section id="home" class="hero-section section-padding">
             <div class="container hero-container">
-                <div class="hero-content reveal">
+                <div class="reveal">
                     <div class="badge">
-                        <span class="badge-dot"></span> Available for Freelance & Full-time
+                        <span class="badge-dot"></span> Available for Opportunities
                     </div>
                     <h1 class="hero-title">
                         Designing & Coding <br>
                         <span class="gradient-text">Digital Experiences</span>
                     </h1>
                     <h2 class="hero-subtitle">
-                        Hi, I'm Alex. I am a <span class="typing-text" id="typing-text"></span><span class="typing-cursor">|</span>
+                        Creative Full-Stack Developer & Designer
                     </h2>
                     <p class="hero-description">
-                        I craft high-performance web applications with stunning visual design and robust backend architectures. Focused on clean code and interactive animations.
+                        I craft high-performance web applications with stunning visual design and robust backend architectures. Focused on clean code, responsiveness, and elegant user experiences.
                     </p>
                     <div class="hero-cta">
                         <a href="#contact" class="btn btn-primary">
@@ -93,48 +86,11 @@
                         </a>
                     </div>
                     <div class="hero-socials">
-                        <span class="social-label">Follow me:</span>
+                        <span class="social-label">Find me:</span>
                         <div class="social-icons">
                             <a href="#" class="social-icon" aria-label="GitHub"><i data-lucide="github"></i></a>
                             <a href="#" class="social-icon" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
                             <a href="#" class="social-icon" aria-label="Twitter"><i data-lucide="twitter"></i></a>
-                            <a href="#" class="social-icon" aria-label="Dribbble"><i data-lucide="dribbble"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="hero-visual reveal">
-                    <div class="interactive-card-wrapper">
-                        <div class="tilt-card" id="hero-tilt-card">
-                            <div class="card-glow"></div>
-                            <div class="card-border"></div>
-                            <div class="card-inner">
-                                <div class="card-header">
-                                    <div class="card-dots">
-                                        <span class="dot red"></span>
-                                        <span class="dot yellow"></span>
-                                        <span class="dot green"></span>
-                                    </div>
-                                    <div class="card-tab">DeveloperProfile.json</div>
-                                </div>
-                                <div class="card-body">
-                                    <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
-  <span class="property">name</span>: <span class="string">'Alex Rivera'</span>,
-  <span class="property">role</span>: <span class="string">'Creative Full Stack'</span>,
-  <span class="property">skills</span>: [
-    <span class="string">'JavaScript'</span>, <span class="string">'TypeScript'</span>,
-    <span class="string">'Node.js'</span>, <span class="string">'React'</span>,
-    <span class="string">'CSS/Sass'</span>, <span class="string">'UI/UX'</span>
-  ],
-  <span class="property">hobbies</span>: [<span class="string">'Code Art'</span>, <span class="string">'Coffee'</span>],
-  <span class="property">location</span>: <span class="string">'San Francisco, CA'</span>
-};
-
-<span class="comment">// Fueling creativity with code</span>
-<span class="keyword">const</span> <span class="variable">passion</span> = <span class="variable">developer</span>.<span class="property">skills</span>
-  .<span class="property">map</span>(<span class="variable">s</span> => <span class="string">`✨ ${<span class="variable">s</span>}`</span>);</code></pre>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -151,15 +107,14 @@
                 </div>
                 
                 <div class="about-grid">
-                    <div class="about-info-card reveal">
-                        <div class="avatar-container">
-                            <div class="avatar-glow"></div>
-                            <!-- Beautiful abstract developer representation in pure SVG -->
+                    <div class="about-bio-side reveal">
+                        <!-- Abstract developer representation in SVG -->
+                        <div style="width: 70px; height: 70px; margin-bottom: 20px;">
                             <svg class="avatar-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
                                     <linearGradient id="avatar-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stop-color="#00F5FF" />
-                                        <stop offset="100%" stop-color="#8A2BE2" />
+                                        <stop offset="0%" stop-color="#6366f1" />
+                                        <stop offset="100%" stop-color="#8b5cf6" />
                                     </linearGradient>
                                     <clipPath id="avatar-clip">
                                         <circle cx="50" cy="50" r="46" />
@@ -167,20 +122,14 @@
                                 </defs>
                                 <circle cx="50" cy="50" r="48" fill="none" stroke="url(#avatar-grad)" stroke-width="2" />
                                 <g clip-path="url(#avatar-clip)">
-                                    <rect width="100" height="100" fill="#161B26" />
-                                    <!-- Abstract developer head and shoulders -->
+                                    <rect width="100" height="100" fill="#0f172a" />
                                     <circle cx="50" cy="40" r="18" fill="url(#avatar-grad)" opacity="0.85" />
                                     <path d="M20 80 C 20 60, 80 60, 80 80" fill="url(#avatar-grad)" opacity="0.75" />
-                                    <!-- Dynamic geometric items representing tech -->
-                                    <circle cx="15" cy="25" r="3" fill="#00F5FF" />
-                                    <circle cx="85" cy="30" r="4" fill="#8A2BE2" />
-                                    <path d="M 45 42 L 50 37 L 55 42" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M 42 48 H 58" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" />
+                                    <circle cx="15" cy="25" r="3" fill="#6366f1" />
+                                    <circle cx="85" cy="30" r="4" fill="#8b5cf6" />
                                 </g>
                             </svg>
                         </div>
-                        <h3>Alex Rivera</h3>
-                        <p class="about-role">Lead Creative Engineer</p>
                         <p class="about-bio">
                             I am a developer who refuses to choose between creativity and logical structure. For over 5 years, I've designed custom platforms that operate at high-speeds and captivate users with polished micro-interactions.
                         </p>
@@ -201,52 +150,36 @@
                         </div>
                     </div>
                     
-                    <div class="about-skills-card reveal">
-                        <h3>Core Tech & Superpowers</h3>
-                        <p class="skills-intro">I constanty update my toolkit to ensure I can build whatever is imagined. Here is my current stack:</p>
+                    <div class="about-skills-side reveal">
+                        <h3>Core Tech & Stack</h3>
                         
                         <div class="skills-container">
-                            <div class="skill-category">
+                            <div class="skills-category">
                                 <h4>Frontend</h4>
                                 <div class="skills-list">
-                                    <span class="skill-tag" data-level="95%"><i data-lucide="html-5" class="skill-icon"></i>HTML5</span>
-                                    <span class="skill-tag" data-level="90%"><i data-lucide="codepen" class="skill-icon"></i>CSS3/Sass</span>
-                                    <span class="skill-tag" data-level="92%"><i data-lucide="code" class="skill-icon"></i>JavaScript</span>
-                                    <span class="skill-tag" data-level="88%"><i data-lucide="layers" class="skill-icon"></i>React.js</span>
-                                    <span class="skill-tag" data-level="85%"><i data-lucide="component" class="skill-icon"></i>Vue.js</span>
+                                    <span class="skill-tag"><i data-lucide="html-5" class="skill-icon"></i>HTML5</span>
+                                    <span class="skill-tag"><i data-lucide="codepen" class="skill-icon"></i>CSS3/Sass</span>
+                                    <span class="skill-tag"><i data-lucide="code" class="skill-icon"></i>JavaScript</span>
+                                    <span class="skill-tag"><i data-lucide="layers" class="skill-icon"></i>React.js</span>
                                 </div>
                             </div>
                             
-                            <div class="skill-category">
-                                <h4>Backend & Tooling</h4>
+                            <div class="skills-category">
+                                <h4>Backend & Tools</h4>
                                 <div class="skills-list">
-                                    <span class="skill-tag" data-level="85%"><i data-lucide="server" class="skill-icon"></i>Node.js</span>
-                                    <span class="skill-tag" data-level="80%"><i data-lucide="database" class="skill-icon"></i>PostgreSQL</span>
-                                    <span class="skill-tag" data-level="75%"><i data-lucide="terminal" class="skill-icon"></i>Express</span>
-                                    <span class="skill-tag" data-level="90%"><i data-lucide="git-branch" class="skill-icon"></i>Git & GitHub</span>
-                                    <span class="skill-tag" data-level="82%"><i data-lucide="cloud" class="skill-icon"></i>AWS / Vercel</span>
+                                    <span class="skill-tag"><i data-lucide="server" class="skill-icon"></i>Node.js</span>
+                                    <span class="skill-tag"><i data-lucide="database" class="skill-icon"></i>PostgreSQL</span>
+                                    <span class="skill-tag"><i data-lucide="git-branch" class="skill-icon"></i>Git</span>
+                                    <span class="skill-tag"><i data-lucide="cloud" class="skill-icon"></i>Vercel</span>
                                 </div>
                             </div>
                             
-                            <div class="skill-category">
-                                <h4>Design & UX</h4>
+                            <div class="skills-category">
+                                <h4>Design</h4>
                                 <div class="skills-list">
-                                    <span class="skill-tag" data-level="88%"><i data-lucide="figma" class="skill-icon"></i>Figma</span>
-                                    <span class="skill-tag" data-level="80%"><i data-lucide="palette" class="skill-icon"></i>UI Design</span>
-                                    <span class="skill-tag" data-level="85%"><i data-lucide="activity" class="skill-icon"></i>Interaction Design</span>
-                                    <span class="skill-tag" data-level="90%"><i data-lucide="image" class="skill-icon"></i>Vector Graphics</span>
+                                    <span class="skill-tag"><i data-lucide="figma" class="skill-icon"></i>Figma</span>
+                                    <span class="skill-tag"><i data-lucide="palette" class="skill-icon"></i>UI/UX Design</span>
                                 </div>
-                            </div>
-                        </div>
-
-                        <!-- Skill Level Preview Widget -->
-                        <div class="skill-preview-widget" id="skill-preview-widget">
-                            <div class="widget-header">
-                                <span class="widget-title">Skill Details</span>
-                                <span class="widget-percentage" id="widget-percentage">Select a skill tag above</span>
-                            </div>
-                            <div class="widget-bar-bg">
-                                <div class="widget-bar-fill" id="widget-bar-fill" style="width: 0%"></div>
                             </div>
                         </div>
                     </div>
@@ -260,42 +193,26 @@
                 <div class="section-header reveal">
                     <span class="section-tag">Portfolio</span>
                     <h2 class="section-title">Featured Projects</h2>
-                    <p class="section-subtitle">A curated collection of things I've built. Filter by category.</p>
-                </div>
-                
-                <!-- Filters -->
-                <div class="project-filters reveal">
-                    <button class="filter-btn active" data-filter="all">All Work</button>
-                    <button class="filter-btn" data-filter="frontend">Frontend</button>
-                    <button class="filter-btn" data-filter="fullstack">Fullstack</button>
-                    <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                    <p class="section-subtitle">A curated collection of things I've built recently.</p>
                 </div>
                 
                 <!-- Project Grid -->
                 <div class="project-grid">
                     <!-- Project 1 -->
-                    <div class="project-card reveal" data-category="frontend">
+                    <div class="project-card reveal">
                         <div class="project-img-container">
-                            <div class="project-img-glow"></div>
-                            <!-- Embed stylized SVG mockups instead of placeholder images -->
                             <svg class="project-svg" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="240" fill="#161B26" />
+                                <rect width="400" height="240" fill="#0f172a" />
                                 <circle cx="200" cy="120" r="70" fill="none" stroke="url(#p1-grad)" stroke-width="4" stroke-dasharray="10 15" />
                                 <text x="200" y="125" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="800" font-size="24" fill="#FFFFFF">NEXUS</text>
-                                <path d="M 120 180 Q 200 130 280 180" stroke="#00F5FF" stroke-width="3" fill="none" opacity="0.6" />
+                                <path d="M 120 180 Q 200 130 280 180" stroke="#6366f1" stroke-width="3" fill="none" opacity="0.6" />
                                 <defs>
                                     <linearGradient id="p1-grad" x1="0" y1="0" x2="1" y2="1">
-                                        <stop offset="0%" stop-color="#00F5FF" />
-                                        <stop offset="100%" stop-color="#8A2BE2" />
+                                        <stop offset="0%" stop-color="#6366f1" />
+                                        <stop offset="100%" stop-color="#8b5cf6" />
                                     </linearGradient>
                                 </defs>
                             </svg>
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="project-link-icon" aria-label="GitHub Repo"><i data-lucide="github"></i></a>
-                                    <a href="#" class="project-link-icon" aria-label="Live Demo"><i data-lucide="external-link"></i></a>
-                                </div>
-                            </div>
                         </div>
                         <div class="project-info">
                             <div class="project-tags">
@@ -304,33 +221,29 @@
                             </div>
                             <h3 class="project-title">Nexus Dashboard</h3>
                             <p class="project-description">A futuristic analytical control panel incorporating interactive 3D WebGL data clouds and fully responsive metrics widgets.</p>
-                            <a href="#" class="project-text-link">Learn More <i data-lucide="chevron-right"></i></a>
+                            <div class="project-links">
+                                <a href="#" class="project-text-link"><i data-lucide="github"></i> Code</a>
+                                <a href="#" class="project-text-link"><i data-lucide="external-link"></i> Live</a>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Project 2 -->
-                    <div class="project-card reveal" data-category="fullstack">
+                    <div class="project-card reveal">
                         <div class="project-img-container">
-                            <div class="project-img-glow"></div>
                             <svg class="project-svg" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="240" fill="#161B26" />
+                                <rect width="400" height="240" fill="#0f172a" />
                                 <rect x="100" y="60" width="200" height="120" rx="10" fill="none" stroke="url(#p2-grad)" stroke-width="3" />
                                 <text x="200" y="125" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="800" font-size="24" fill="#FFFFFF">SCRYPT</text>
-                                <line x1="120" y1="90" x2="280" y2="90" stroke="#8A2BE2" stroke-width="2" />
-                                <line x1="120" y1="120" x2="220" y2="120" stroke="#8A2BE2" stroke-width="2" />
+                                <line x1="120" y1="90" x2="280" y2="90" stroke="#8b5cf6" stroke-width="2" />
+                                <line x1="120" y1="120" x2="220" y2="120" stroke="#8b5cf6" stroke-width="2" />
                                 <defs>
                                     <linearGradient id="p2-grad" x1="0" y1="0" x2="1" y2="1">
-                                        <stop offset="0%" stop-color="#8A2BE2" />
-                                        <stop offset="100%" stop-color="#FF007F" />
+                                        <stop offset="0%" stop-color="#8b5cf6" />
+                                        <stop offset="100%" stop-color="#6366f1" />
                                     </linearGradient>
                                 </defs>
                             </svg>
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="project-link-icon" aria-label="GitHub Repo"><i data-lucide="github"></i></a>
-                                    <a href="#" class="project-link-icon" aria-label="Live Demo"><i data-lucide="external-link"></i></a>
-                                </div>
-                            </div>
                         </div>
                         <div class="project-info">
                             <div class="project-tags">
@@ -339,31 +252,27 @@
                             </div>
                             <h3 class="project-title">Scrypt Vault</h3>
                             <p class="project-description">End-to-end encrypted storage platform utilizing Zero-Knowledge proofs and microservices architecture for data protection.</p>
-                            <a href="#" class="project-text-link">Learn More <i data-lucide="chevron-right"></i></a>
+                            <div class="project-links">
+                                <a href="#" class="project-text-link"><i data-lucide="github"></i> Code</a>
+                                <a href="#" class="project-text-link"><i data-lucide="external-link"></i> Live</a>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Project 3 -->
-                    <div class="project-card reveal" data-category="design">
+                    <div class="project-card reveal">
                         <div class="project-img-container">
-                            <div class="project-img-glow"></div>
                             <svg class="project-svg" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="240" fill="#161B26" />
+                                <rect width="400" height="240" fill="#0f172a" />
                                 <polygon points="200,40 280,180 120,180" fill="none" stroke="url(#p3-grad)" stroke-width="4" stroke-linejoin="round" />
                                 <text x="200" y="145" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="800" font-size="24" fill="#FFFFFF">AURA</text>
                                 <defs>
                                     <linearGradient id="p3-grad" x1="0" y1="0" x2="1" y2="1">
-                                        <stop offset="0%" stop-color="#00F5FF" />
-                                        <stop offset="100%" stop-color="#FFD700" />
+                                        <stop offset="0%" stop-color="#6366f1" />
+                                        <stop offset="100%" stop-color="#8b5cf6" />
                                     </linearGradient>
                                 </defs>
                             </svg>
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="project-link-icon" aria-label="GitHub Repo"><i data-lucide="github"></i></a>
-                                    <a href="#" class="project-link-icon" aria-label="Live Demo"><i data-lucide="external-link"></i></a>
-                                </div>
-                            </div>
                         </div>
                         <div class="project-info">
                             <div class="project-tags">
@@ -372,32 +281,28 @@
                             </div>
                             <h3 class="project-title">Aura Crypto App</h3>
                             <p class="project-description">A sleek visual exploration of a next-generation decentralized mobile wallet centered on emotional color-shifting UI states.</p>
-                            <a href="#" class="project-text-link">Learn More <i data-lucide="chevron-right"></i></a>
+                            <div class="project-links">
+                                <a href="#" class="project-text-link"><i data-lucide="github"></i> Code</a>
+                                <a href="#" class="project-text-link"><i data-lucide="external-link"></i> Live</a>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Project 4 -->
-                    <div class="project-card reveal" data-category="frontend">
+                    <div class="project-card reveal">
                         <div class="project-img-container">
-                            <div class="project-img-glow"></div>
                             <svg class="project-svg" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="240" fill="#161B26" />
+                                <rect width="400" height="240" fill="#0f172a" />
                                 <rect x="80" y="40" width="240" height="150" rx="6" fill="none" stroke="url(#p4-grad)" stroke-width="2" />
                                 <circle cx="200" cy="115" r="30" fill="url(#p4-grad)" opacity="0.8" />
-                                <line x1="200" y1="40" x2="200" y2="190" stroke="#161B26" stroke-width="2" />
+                                <line x1="200" y1="40" x2="200" y2="190" stroke="#0f172a" stroke-width="2" />
                                 <defs>
                                     <linearGradient id="p4-grad" x1="0" y1="0" x2="1" y2="1">
-                                        <stop offset="0%" stop-color="#00FF87" />
-                                        <stop offset="100%" stop-color="#60EFFF" />
+                                        <stop offset="0%" stop-color="#6366f1" />
+                                        <stop offset="100%" stop-color="#8b5cf6" />
                                     </linearGradient>
                                 </defs>
                             </svg>
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="project-link-icon" aria-label="GitHub Repo"><i data-lucide="github"></i></a>
-                                    <a href="#" class="project-link-icon" aria-label="Live Demo"><i data-lucide="external-link"></i></a>
-                                </div>
-                            </div>
                         </div>
                         <div class="project-info">
                             <div class="project-tags">
@@ -406,14 +311,17 @@
                             </div>
                             <h3 class="project-title">Synthetix Engine</h3>
                             <p class="project-description">A browser synthesizer and audio visualizer generating dynamic geometric waves from oscillator waveforms in real time.</p>
-                            <a href="#" class="project-text-link">Learn More <i data-lucide="chevron-right"></i></a>
+                            <div class="project-links">
+                                <a href="#" class="project-text-link"><i data-lucide="github"></i> Code</a>
+                                <a href="#" class="project-text-link"><i data-lucide="external-link"></i> Live</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Experience & Timeline Section -->
+        <!-- Experience Section -->
         <section id="experience" class="experience-section section-padding">
             <div class="container">
                 <div class="section-header reveal">
@@ -425,11 +333,8 @@
                 <div class="timeline">
                     <!-- Timeline Item 1 -->
                     <div class="timeline-item reveal">
-                        <div class="timeline-dot">
-                            <i data-lucide="briefcase"></i>
-                        </div>
+                        <div class="timeline-date">2024 - Present</div>
                         <div class="timeline-content">
-                            <span class="timeline-date">2024 - Present</span>
                             <h3 class="timeline-title">Lead Creative Developer</h3>
                             <h4 class="timeline-company">Aether Studio</h4>
                             <p class="timeline-desc">Leading a group of four frontend engineers crafting visual design systems and building complex UI animations, improving client site conversions by 40%.</p>
@@ -438,11 +343,8 @@
 
                     <!-- Timeline Item 2 -->
                     <div class="timeline-item reveal">
-                        <div class="timeline-dot">
-                            <i data-lucide="briefcase"></i>
-                        </div>
+                        <div class="timeline-date">2022 - 2024</div>
                         <div class="timeline-content">
-                            <span class="timeline-date">2022 - 2024</span>
                             <h3 class="timeline-title">Senior Full-Stack Engineer</h3>
                             <h4 class="timeline-company">Chronos Labs</h4>
                             <p class="timeline-desc">Engineered full-stack features utilizing Node.js, Express, and PostgreSQL. Spearheaded migration from legacy systems to a unified serverless cloud architecture.</p>
@@ -451,11 +353,8 @@
 
                     <!-- Timeline Item 3 -->
                     <div class="timeline-item reveal">
-                        <div class="timeline-dot">
-                            <i data-lucide="graduation-cap"></i>
-                        </div>
+                        <div class="timeline-date">2018 - 2022</div>
                         <div class="timeline-content">
-                            <span class="timeline-date">2018 - 2022</span>
                             <h3 class="timeline-title">Bachelor of Science, Computer Science</h3>
                             <h4 class="timeline-company">Stanford University</h4>
                             <p class="timeline-desc">Focused on Human-Computer Interaction and Computer Graphics. Completed capstone project in high-frequency interactive canvas representations.</p>
@@ -507,7 +406,6 @@
                                 <a href="#" class="social-icon" aria-label="GitHub"><i data-lucide="github"></i></a>
                                 <a href="#" class="social-icon" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
                                 <a href="#" class="social-icon" aria-label="Twitter"><i data-lucide="twitter"></i></a>
-                                <a href="#" class="social-icon" aria-label="Dribbble"><i data-lucide="dribbble"></i></a>
                             </div>
                         </div>
                     </div>
@@ -516,24 +414,24 @@
                         <form id="contact-form" class="contact-form" novalidate>
                             <div class="form-row">
                                 <div class="form-group">
-                                    <input type="text" id="form-name" required placeholder=" ">
                                     <label for="form-name">Full Name</label>
+                                    <input type="text" id="form-name" required placeholder="John Doe">
                                     <span class="form-error-msg">Name is required</span>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" id="form-email" required placeholder=" ">
                                     <label for="form-email">Email Address</label>
+                                    <input type="email" id="form-email" required placeholder="john@example.com">
                                     <span class="form-error-msg">Enter a valid email address</span>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <input type="text" id="form-subject" required placeholder=" ">
                                 <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" required placeholder="Project Discussion">
                                 <span class="form-error-msg">Subject is required</span>
                             </div>
                             <div class="form-group">
-                                <textarea id="form-message" rows="6" required placeholder=" "></textarea>
                                 <label for="form-message">Your Message</label>
+                                <textarea id="form-message" rows="5" required placeholder="Tell me more about your project..."></textarea>
                                 <span class="form-error-msg">Message cannot be empty</span>
                             </div>
                             <button type="submit" class="btn btn-primary btn-submit">
@@ -551,7 +449,7 @@
     <footer class="footer">
         <div class="container footer-content">
             <p class="copyright">&copy; 2026 Alex Rivera. All Rights Reserved.</p>
-            <p class="credit">Designed & Coded with <span class="heart">&hearts;</span> by Alex</p>
+            <p class="credit">Designed & Coded by Alex</p>
         </div>
     </footer>
 
